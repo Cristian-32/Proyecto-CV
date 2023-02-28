@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="encabezado-pie">
+        <header>
+            <h1 class="titulo">Norman Hudson</h1>
+            <h2 class="titulo">Desarrolador Web</h2>
+            <br>
+            <h3 class="titulo"><img class="foto" src="img/foto.jpg" alt="foto_cv"></h3>
+            <br>
+            <nav>
+                <ul>
+                    <li><a href="index.html">PERFIL</a></li>
+                    <li><a href="mis_datos.html">INFORMACIÓN PERSONAL</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>    
+
+    <main class="formulario">       
+        <form id="form">
+            <label for="apellido">Apellido: </label>
+            <input type="text" id="apellido" class="input-form" required>
+            <br>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" class="input-form" required>
+            <br>
+            <label for="email">Email de Empresa: </label>
+            <input type="email" id="email" class="input-form" required>
+            <br>
+            <label for="telefono">Teléfono de Empresa: </label>
+            <input type="tel" id="telefono" class="input-form" required>
+            <br>
+            <label for="mensaje">Mensaje: </label>
+            <textarea id="mensaje" cols="80" rows="10" class="input-form" required></textarea>
+    
+
+            <fieldset class="borde">
+                <legend>¿Cómo le gustaría que me contacte?</legend>
+
+                <label for="email-radio"><input type="radio" id="email-radio" name="contacto">Email</label>
+            
+                <label for="telefono-radio"><input type="radio" id="telefono-radio" name="contacto">Teléfono</label>
+
+                <label for="whatsapp-radio"><input type="radio" id="whatsapp-radio" name="contacto" checked>WhatsApp</label>
+            </fieldset>
+
+            <fieldset class="borde">
+                <legend>¿En qué momento del día?</legend>
+                <select class="selector">
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </fieldset>
+            <button type="submit" id="enviar">Enviar Contacto</button>
+            <script src="javascript/function.js"></script>
+        </form>
+    </main>
+
+    <footer>
+        <div class="encabezado-pie">
+            <a href="https://www.linkedin.com/"><img src="img/logo_linkedin.png" width="50px" alt="logo_linkedin"></a>
+            <a href="https://twitter.com/"><img src="img/logo_twitter.png" width="50px" alt="logo_twitter"></a>
+            <a href="https://www.facebook.com/"><img src="img/logo_facebook.png" width="50px" alt="logo_facebook"></a>
+            <a href="https://github.com/"><img src="img/logo_github.png" width="50px" alt="logo_github"></a>
+        </div>    
+    </footer>
+</body>
+</html>
